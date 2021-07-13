@@ -17,3 +17,18 @@ class Main {
         System.out.println(highestNumber);
     }
 }
+
+//A improve version that can be applied on the code above
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int max = 0;
+        int input = 1;
+        while (input != 0) {
+            input = scanner.nextInt();
+            max = input > max ? input : max;
+        }
+        System.out.println(max);
+    }
+}
