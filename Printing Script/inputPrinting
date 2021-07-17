@@ -1,0 +1,30 @@
+// Printing multiple input in one line and printing them in shortest way.
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println(scanner.nextInt() + "\n" + scanner.nextInt() + "\n"
+                            + scanner.nextInt() + "\n" + scanner.nextInt());
+        
+    }
+}
+
+// long way
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int first = scanner.nextInt();
+        int second = scanner.nextInt();
+        int third = scanner.nextInt();
+        int fourth = scanner.nextInt();
+        
+        System.out.println(first + "\n" + second + "\n" + third + "\n" + fourth);
+    }
+}
